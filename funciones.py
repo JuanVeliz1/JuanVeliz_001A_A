@@ -47,7 +47,7 @@ def reporteSueldos (sueldosA):
 
     with open("reporteSueldo.csv","w",newline="") as archivo:        
         escritor= csv.writer(archivo)           
-        escritor.writerow(["Nombre alumno", "Creditos"])    
+        escritor.writerow(["trabajadores", "sueldosA"])    
         for trabajadores in sueldos:                        
             for trabajadores, sueldos in trabajadores.items():    
                 escritor.writerow([trabajadores, sueldos])        
